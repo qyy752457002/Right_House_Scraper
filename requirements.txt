@@ -1,0 +1,4 @@
+Scrapy
+scrapy_xlsx
+reportlab==4.0.4
+python-slugify

@@ -1,0 +1,207 @@
+INFO: Scrapy 2.9.0 started (bot: rightmove_properties)
+INFO: Versions: lxml 4.9.2.0, libxml2 2.9.14, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.9.5 (v3.9.5:0a7dcbdb13, May  3 2021, 13:17:02) - [Clang 6.0 (clang-600.0.57)], pyOpenSSL 23.1.1 (OpenSSL 3.1.0 14 Mar 2023), cryptography 40.0.2, Platform macOS-10.16-x86_64-i386-64bit
+INFO: Overridden settings:
+{'BOT_NAME': 'rightmove_properties',
+ 'CONCURRENT_REQUESTS': 5,
+ 'NEWSPIDER_MODULE': 'rightmove_properties.spiders',
+ 'SPIDER_MODULES': ['rightmove_properties.spiders']}
+WARNING: /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/utils/request.py:232: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+INFO: Telnet Password: ced59ebc1cb8c5db
+INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+INFO: Enabled item pipelines:
+[]
+INFO: Spider opened
+INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+INFO: Telnet console listening on 127.0.0.1:6023
+DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/141071210#/?channel=RES_LET> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/141071210#/?channel=RES_LET> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+ERROR: Gave up retrying <GET https://www.rightmove.co.uk/properties/141071210#/?channel=RES_LET> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/143921051#/?channel=RES_LET> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG: Retrying <GET https://www.rightmove.co.uk/properties/143921051#/?channel=RES_LET> (failed 2 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+ERROR: Gave up retrying <GET https://www.rightmove.co.uk/properties/143921051#/?channel=RES_LET> (failed 3 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+ERROR: Error downloading <GET https://www.rightmove.co.uk/properties/141071210#/?channel=RES_LET>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+ERROR: Error downloading <GET https://www.rightmove.co.uk/properties/143921051#/?channel=RES_LET>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/core/downloader/middleware.py", line 54, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseNeverReceived: [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>]
+DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/143413952#/?channel=RES_LET> (referer: None)
+DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/143954486#/?channel=RES_LET> (referer: None)
+DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/143883161#/?channel=RES_LET> (referer: None)
+DEBUG: STREAM b'IHDR' 16 13
+DEBUG: STREAM b'IDAT' 41 28832
+DEBUG: Property Cranley Place, South Kensington, London, SW7 PDF file saved
+DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/143413952>
+OrderedDict([('Address', 'Cranley Place, South Kensington, London, SW7'), ('Price PCM', '£1,950'), ('Price PW', '£450'), ('Property Type', ''), ('Bedrooms', ''), ('Bathrooms', ''), ('Available Date', 'Now'), ('Furnish Type', 'Furnished'), ('image_urls', ['https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_00_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_01_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_02_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_03_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_04_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_05_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_08_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_11_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_12_0000.jpeg', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_13_0000.jpeg']), ('Floor Plan image url', 'https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_FLP_00_0000.gif'), ('Image 1', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_00_0000.jpeg")'), ('Image 2', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_01_0000.jpeg")'), ('Image 3', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_02_0000.jpeg")'), ('Image 4', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_03_0000.jpeg")'), ('Image 5', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_04_0000.jpeg")'), ('Image 6', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_05_0000.jpeg")'), ('Image 7', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_08_0000.jpeg")'), ('Image 8', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_11_0000.jpeg")'), ('Image 9', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_12_0000.jpeg")'), ('Image 10', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_IMG_13_0000.jpeg")'), ('Floor Plan', '=IMAGE("https://media.rightmove.co.uk/79k/78265/143413952/78265_CEL210090_L_FLP_00_0000.gif")')])
+DEBUG: Crawled (200) <GET https://www.rightmove.co.uk/properties/141989534#/?channel=RES_LET> (referer: None)
+DEBUG: STREAM b'IHDR' 16 13
+DEBUG: STREAM b'IDAT' 41 28832
+DEBUG: Property Airlie Gardens, 
+Campden Hill, W8 PDF file saved
+DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/143954486>
+OrderedDict([('Address', 'Airlie Gardens, \nCampden Hill, W8'), ('Price PCM', '£1,950'), ('Price PW', '£450'), ('Property Type', ''), ('Bedrooms', ''), ('Bathrooms', ''), ('Available Date', 'Now'), ('Furnish Type', 'Furnished'), ('image_urls', ['https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_00_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_01_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_02_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_03_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_04_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_05_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_06_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_07_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_08_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_09_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_10_0000.jpeg', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_11_0000.jpeg']), ('Floor Plan image url', 'https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_FLP_00_0000.jpeg'), ('Image 1', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_00_0000.jpeg")'), ('Image 2', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_01_0000.jpeg")'), ('Image 3', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_02_0000.jpeg")'), ('Image 4', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_03_0000.jpeg")'), ('Image 5', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_04_0000.jpeg")'), ('Image 6', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_05_0000.jpeg")'), ('Image 7', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_06_0000.jpeg")'), ('Image 8', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_07_0000.jpeg")'), ('Image 9', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_08_0000.jpeg")'), ('Image 10', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_09_0000.jpeg")'), ('Image 11', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_10_0000.jpeg")'), ('Image 12', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_IMG_11_0000.jpeg")'), ('Floor Plan', '=IMAGE("https://media.rightmove.co.uk/52k/51301/143954486/51301_HEA734139_L_FLP_00_0000.jpeg")')])
+DEBUG: STREAM b'IHDR' 16 13
+DEBUG: STREAM b'IDAT' 41 28832
+DEBUG: Property Glendower Place, London, SW7 PDF file saved
+DEBUG: Scraped from <200 https://www.rightmove.co.uk/properties/143883161>
+OrderedDict([('Address', 'Glendower Place, London, SW7'), ('Price PCM', '£1,733'), ('Price PW', '£400'), ('Property Type', ''), ('Bedrooms', ''), ('Bathrooms', ''), ('Available Date', 'Ask agent'), ('Furnish Type', 'Ask agent'), ('image_urls', ['https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_00_0000.jpeg', 'https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_02_0000.jpeg', 'https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_03_0000.jpeg', 'https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_04_0000.jpeg', 'https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_01_0000.jpeg']), ('Floor Plan image url', ''), ('Image 1', '=IMAGE("https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_00_0000.jpeg")'), ('Image 2', '=IMAGE("https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_02_0000.jpeg")'), ('Image 3', '=IMAGE("https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_03_0000.jpeg")'), ('Image 4', '=IMAGE("https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_04_0000.jpeg")'), ('Image 5', '=IMAGE("https://media.rightmove.co.uk/57k/56271/143883161/56271_SKL160003_L_IMG_01_0000.jpeg")'), ('Image 6', ''), ('Image 7', ''), ('Image 8', ''), ('Image 9', ''), ('Image 10', ''), ('Floor Plan', '=IMAGE("")')])
+INFO: Crawled 4 pages (at 4 pages/min), scraped 3 items (at 3 items/min)
+ERROR: Spider error processing <GET https://www.rightmove.co.uk/properties/141989534#/?channel=RES_LET> (referer: None)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/reportlab/lib/utils.py", line 523, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/reportlab/lib/utils.py", line 463, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'https://media.rightmove.co.uk/33k/32757/141989534/32757_Z665_IMG_00_0000.jpeg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1346, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1253, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1299, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1248, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1008, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 948, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/http/client.py", line 1422, in connect
+    self.sock = self._context.wrap_socket(self.sock,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1040, in _create
+    self.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/ssl.py", line 1309, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:1129)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/reportlab/lib/utils.py", line 530, in open_for_read
+    return BytesIO((datareader if name[:5].lower()=='data:' else rlUrlRead)(name))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/reportlab/lib/utils.py", line 476, in rlUrlRead
+    return urlopen(name).read()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 214, in urlopen
+    return opener.open(url, data, timeout)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 517, in open
+    response = self._open(req, data)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 534, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 494, in _call_chain
+    result = func(*args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1389, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/urllib/request.py", line 1349, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/utils/defer.py", line 260, in iter_errback
+    yield next(it)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/utils/python.py", line 336, in __next__
+    return next(self.data)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/utils/python.py", line 336, in __next__
+    return next(self.data)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/core/spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/spidermiddlewares/offsite.py", line 28, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/core/spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/spidermiddlewares/referer.py", line 352, in <genexpr>
+    return (self._set_referer(r, response) for r in result or ())
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/core/spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/spidermiddlewares/urllength.py", line 27, in <genexpr>
+    return (r for r in result or () if self._filter(r, spider))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/core/spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/spidermiddlewares/depth.py", line 31, in <genexpr>
+    return (r for r in result or () if self._filter(r, response, spider))
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/scrapy/core/spidermw.py", line 106, in process_sync
+    for r in iterable:
+  File "/Users/fengwanting/Downloads/RightMove Properties Scraper (with PDF)/rightmove_properties/rightmove_properties/spiders/rightmove_pdf.py", line 89, in parse
+    self.make_pdf(item=item, response=response)
+  File "/Users/fengwanting/Downloads/RightMove Properties Scraper (with PDF)/rightmove_properties/rightmove_properties/spiders/rightmove_pdf.py", line 163, in make_pdf
+    self.create_images_table(item),
+  File "/Users/fengwanting/Downloads/RightMove Properties Scraper (with PDF)/rightmove_properties/rightmove_properties/spiders/rightmove_pdf.py", line 206, in create_images_table
+    image = Image(image_url, width=new_width, height=new_height)  # Adjust width and height
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/reportlab/platypus/flowables.py", line 424, in __init__
+    f = open_for_read(filename, 'b')
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/reportlab/lib/utils.py", line 532, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "https://media.rightmove.co.uk/33k/32757/141989534/32757_Z665_IMG_00_0000.jpeg"
+INFO: Closing spider (finished)
+INFO: Stored xlsx feed (3 items) in: output/RightMove Properties 25012024 111703.xlsx
+INFO: Dumping Scrapy stats:
+{'downloader/exception_count': 6,
+ 'downloader/exception_type_count/twisted.web._newclient.ResponseNeverReceived': 6,
+ 'downloader/request_bytes': 4800,
+ 'downloader/request_count': 10,
+ 'downloader/request_method_count/GET': 10,
+ 'downloader/response_bytes': 1208513,
+ 'downloader/response_count': 4,
+ 'downloader/response_status_count/200': 4,
+ 'elapsed_time_seconds': 66.138108,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 1, 25, 11, 18, 9, 522345),
+ 'item_scraped_count': 3,
+ 'log_count/DEBUG': 21,
+ 'log_count/ERROR': 5,
+ 'log_count/INFO': 12,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 119545856,
+ 'memusage/startup': 81219584,
+ 'response_received_count': 4,
+ 'retry/count': 4,
+ 'retry/max_reached': 2,
+ 'retry/reason_count/twisted.web._newclient.ResponseNeverReceived': 4,
+ 'scheduler/dequeued': 10,
+ 'scheduler/dequeued/memory': 10,
+ 'scheduler/enqueued': 10,
+ 'scheduler/enqueued/memory': 10,
+ 'spider_exceptions/OSError': 1,
+ 'start_time': datetime.datetime(2024, 1, 25, 11, 17, 3, 384237)}
+INFO: Spider closed (finished)
